@@ -9,7 +9,6 @@ export class PolicyService {
   constructor(private firestore: AngularFirestore) { }
   isLinear = false;
 
-
   form = new FormGroup({
 
     firstName: new FormControl(""),
@@ -48,6 +47,8 @@ export class PolicyService {
     anyoneStudyingNow: new FormControl(""),
     yearsOfBeingABeliever: new FormControl(""),
     countryCitizenship: new FormControl(""),
+    dateSubmitted: new FormControl(""),
+  
   });
 
   //Firestore CRUD actions example
@@ -60,21 +61,8 @@ export class PolicyService {
     });
   }
 
-  // updateCoffeeOrder(data) {
-  //   return this.firestore
-  //     .collection("coffeeOrders")
-  //     .doc(data.payload.doc.id)
-  //     .set({ completed: true }, { merge: true });
-  // }
-
   getZtsForms() {
     return this.firestore.collection("zts-forms").snapshotChanges();
   }
 
-  // deleteCoffeeOrder(data) {
-  //   return this.firestore
-  //     .collection("coffeeOrders")
-  //     .doc(data.payload.doc.id)
-  //     .delete();
-  // }
 }

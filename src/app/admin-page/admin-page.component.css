@@ -1,7 +1,28 @@
-table,
-th,
-td {
-    border: 1px solid grey;
-    border-collapse: collapse;
-    padding: 8px;
+.users {
+  table-layout: auto;
+  width: 80%;
+  white-space: nowrap;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+.users td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.users th {
+  background: darkblue;
+  color: white;
+}
+
+.users td,
+.users th {
+  text-align: left;
+  padding: 5px 10px;
+}
+
+.users tr:nth-child(even) {
+  background: gray;
 }

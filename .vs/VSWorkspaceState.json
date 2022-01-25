@@ -1,4 +1,11 @@
 {
-  "ExpandedNodes": [],
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\admin-page",
+    "\\src\\app\\policy-list"
+  ],
+  "SelectedNode": "\\src\\app\\admin-page\\admin-page.component.spec.ts",
   "PreviewInSolutionExplorer": false
 }
