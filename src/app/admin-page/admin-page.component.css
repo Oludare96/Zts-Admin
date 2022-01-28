@@ -1,28 +1,30 @@
-.users {
+table {
   table-layout: auto;
-  width: 80%;
+  width: 100px;
   white-space: nowrap;
-  border: 1px solid black;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
+ 
 }
-.users td {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.table td {
 }
 
-.users th {
+.table th {
   background: darkblue;
   color: white;
 }
 
-.users td,
-.users th {
+.table td,
+.tableth {
   text-align: left;
   padding: 5px 10px;
 }
 
-.users tr:nth-child(even) {
+.table tr:nth-child(even) {
   background: gray;
+}
+.scrollit {
+  overflow: scroll;
+  height: auto;
 }

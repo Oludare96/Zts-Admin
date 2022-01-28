@@ -3,9 +3,8 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\admin-page",
-    "\\src\\app\\policy-list"
+    "\\src\\app\\admin-page"
   ],
-  "SelectedNode": "\\src\\app\\admin-page\\admin-page.component.spec.ts",
+  "SelectedNode": "\\src\\app\\admin-page\\admin-page.component.html",
   "PreviewInSolutionExplorer": false
 }
