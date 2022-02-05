@@ -1,3 +1,7 @@
+.bg-wrapper {
+  background-color: #eeeeee;
+}
+
 table {
   table-layout: auto;
   width: 100px;
@@ -11,18 +15,18 @@ table {
 }
 
 .table th {
-  background: darkblue;
-  color: white;
+  /* background: darkblue;
+  color: white; */
 }
 
 .table td,
 .tableth {
-  text-align: left;
-  padding: 5px 10px;
+  /* text-align: left;
+  padding: 5px 10px; */
 }
 
 .table tr:nth-child(even) {
-  background: gray;
+  /* background: gray; */
 }
 .scrollit {
   overflow: scroll;
