@@ -9,13 +9,13 @@
           <p>Application form can be found <a href="https://www.dcseminary.org/admissions/apply-now">here</a>.</p>
           <p>This page contains submissions from both English and Spanish application forms.</p>
         </div>
-        <div class="card col-md-10 offset-md-1 my-5">
+        <div class="">
           <div class="card-body">
-            <div class="scrollit">
+            <div class="">
               <table class="table table-centered datatable dt-responsive nowrap">
                 <thead>
                   <tr>
-                    <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+                    <th class="sticky-top" *ngFor="let head of headElements" scope="col">{{head}} </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -48,7 +48,7 @@
                     <td>{{form.payload.doc.data().countryTwo}}</td>
                     <td>{{form.payload.doc.data().ChurchLocation}}</td>
                     <td>{{form.payload.doc.data().attendanceLength}}</td>
-                    <td style="word-wrap:break-word">{{form.payload.doc.data().statementPurpose}}</td>
+                    <td style="width:400px;word-wrap:break-word">{{form.payload.doc.data().statementPurpose}}</td>
                     <td>{{form.payload.doc.data().internetAccess}}</td>
                     <td>{{form.payload.doc.data().refferencePoint}}</td>
                     <td>{{form.payload.doc.data().anyoneStudyingNow}}</td>

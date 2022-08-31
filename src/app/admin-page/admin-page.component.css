@@ -1,14 +1,25 @@
+body {
+  background-color: #eeeeee;
+
+}
+
 .bg-wrapper {
   background-color: #eeeeee;
 }
 
 table {
+  position: relative;
   table-layout: auto;
-  width: 300px;
+  /* width: 300px; */
   /* white-space: nowrap; */
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  /* border: 1px solid rgba(0, 0, 0, 0.125); */
+  padding: 1.25rem;
+  background-color: white;
+  border-collapse: separate;
+  border-spacing: 0;
  
 }
 .table td {
@@ -19,12 +30,18 @@ table {
 .table th {
   /* background: darkblue;
   color: white; */
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 2px solid #eff2f7;
+  z-index: 25;
 }
 
 .table td,
 .tableth {
   /* text-align: left;
   padding: 5px 10px; */
+  border: 1px solid #eff2f7;
 }
 
 .table tr:nth-child(even) {
@@ -33,5 +50,9 @@ table {
 .scrollit {
   overflow: scroll;
   height: auto;
+}
+
+tr {
+  border: 2px solid #eff2f7;
 }
 
