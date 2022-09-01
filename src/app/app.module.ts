@@ -22,14 +22,12 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment.prod';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AdminPageComponent } from './admin-page/admin-page.component';
-import { PolicyListComponent } from './policy-list/policy-list.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminPageComponent,
-    PolicyListComponent
+    AdminPageComponent
   ],
   imports: [
     BrowserModule,
