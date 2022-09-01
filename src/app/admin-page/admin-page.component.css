@@ -1,10 +1,5 @@
-body {
-  background-color: #eeeeee;
-
-}
-
 .bg-wrapper {
-  background-color: #eeeeee;
+  /* background-color: #eeeeee; */
 }
 
 table {
@@ -56,3 +51,7 @@ tr {
   border: 2px solid #eff2f7;
 }
 
+.widerCell {
+  min-width:500px;
+  word-wrap:break-word;
+}

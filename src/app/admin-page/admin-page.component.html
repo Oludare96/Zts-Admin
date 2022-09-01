@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-12">
-        <div class="col-md-10 offset-md-1 mt-5">
+        <div class="col-md-10 mt-5 pl-5">
           <img width="200" src="https://uploads-ssl.webflow.com/60bff710e77176241e15c3c1/60c8f814ed88d90b5ba38de9_logo.svg" alt="">
           <h1 class="h1 mt-4 mb-4">Admin Panel</h1>
           <p class="lead">This page contains all WDCTS Application Form submissions.</p>
@@ -15,12 +15,49 @@
               <table class="table table-centered datatable dt-responsive nowrap">
                 <thead>
                   <tr>
-                    <th class="sticky-top" *ngFor="let head of headElements" scope="col">{{head}} </th>
+                    <!-- <th class="sticky-top" *ngFor="let head of headElements" scope="col">{{head}} </th> -->
+
+                      <th class="sticky-top">Date Submitted</th>
+                      <th class="sticky-top">First Name</th>
+                      <th class="sticky-top">Middle Name</th>
+                      <th class="sticky-top">Last Name</th>
+                      <th class="sticky-top">Email</th>
+                      <th class="sticky-top">Address</th>
+                      <th class="sticky-top">City</th>
+                      <th class="sticky-top">State</th>
+                      <th class="sticky-top">Country of Residence</th>
+                      <th class="sticky-top">Country of Citizenship</th>                  
+                      <th class="sticky-top">English Proficiency</th>
+                      <th class="sticky-top">Other Languages</th>
+                      <th class="sticky-top">Date of Birth</th>
+                      <th class="sticky-top">Phone Number</th>
+                      <th class="sticky-top">Gender</th>
+                      <th class="sticky-top">Ethnic Detail</th>
+                      <th class="sticky-top">Ethnicity</th>
+                      <th class="sticky-top">Occupation</th>
+                      <th class="sticky-top">Marital Status</th>
+                      <th class="sticky-top">Special Accommodations</th>
+                      <th class="sticky-top">Special Accommodations Explain</th>
+                      <th class="sticky-top">Previous Conviction</th>
+                      <th class="sticky-top">Previous Conviction Explain</th>
+                      <th class="sticky-top">Church Name</th>
+                      <th class="sticky-top">Church Role</th>
+                      <th class="sticky-top">Church Size</th>
+                      <th class="sticky-top">Denomination</th>
+                      <th class="sticky-top">Church Location</th>
+                      <th class="sticky-top">Church Attendance Length</th>
+                      <th class="sticky-top">Years of being a believer</th>
+                      <th class="sticky-top">Statement of Purpose</th>
+                      <th class="sticky-top">Internet Access</th>
+                      <th class="sticky-top">How did you hear about us?</th>
+                      <th class="sticky-top">Know anyone studying at WDCTS</th>
+
                   </tr>
                 </thead>
                 <tbody>
                   <tr mdbTableCol *ngFor="let form of ztsForms">
-                    <td>{{ form.payload.doc.data().firstName}}</td>
+                    <td>{{form.payload.doc.data().today}}</td>
+                    <td>{{form.payload.doc.data().firstName}}</td>
                     <td>{{form.payload.doc.data().middleName}}</td>
                     <td>{{form.payload.doc.data().lastName}}</td>
                     <td>{{form.payload.doc.data().email}}</td>
@@ -28,9 +65,10 @@
                     <td>{{form.payload.doc.data().city}}</td>
                     <td>{{form.payload.doc.data().state}}</td>
                     <td>{{form.payload.doc.data().country}}</td>
-                    <td>{{form.payload.doc.data().churchLeadership}}</td>
+                    <td>{{form.payload.doc.data().countryCitizenship}}</td>
                     <td>{{form.payload.doc.data().englishProficiency}}</td>
                     <td>{{form.payload.doc.data().otherLanguages}}</td>
+                    <td>{{form.payload.doc.data().DOB}}</td>
                     <td>{{form.payload.doc.data().phoneNumber}}</td>
                     <td>{{form.payload.doc.data().gender}}</td>
                     <td>{{form.payload.doc.data().ethnicDetail}}</td>
@@ -41,22 +79,17 @@
                     <td>{{form.payload.doc.data().specialAccomidationsExplain}}</td>
                     <td>{{form.payload.doc.data().previousConviction}}</td>
                     <td>{{form.payload.doc.data().previousConvictionExplain}}</td>
-                    <td>{{form.payload.doc.data().DOB}}</td>
-                    <td>{{form.payload.doc.data().addressTwo}}</td>
-                    <td>{{form.payload.doc.data().denomination}}</td>
                     <td>{{form.payload.doc.data().ChurchName}}</td>
-                    <td>{{form.payload.doc.data().churchSize}}</td>
                     <td>{{form.payload.doc.data().churchRole}}</td>
-                    <td>{{form.payload.doc.data().countryTwo}}</td>
-                    <td style="width:400px;word-wrap:break-word">{{form.payload.doc.data().statementPurpose}}</td>
-                    <td>{{form.payload.doc.data().attendanceLength}}</td>
+                    <td>{{form.payload.doc.data().churchSize}}</td>
+                    <td>{{form.payload.doc.data().denomination}}</td>
                     <td>{{form.payload.doc.data().ChurchLocation}}</td>
-                    <td>{{form.payload.doc.data().internetAccess}}</td>
-                    <td>{{form.payload.doc.data().refferencePoint}}</td>
-                    <td>{{form.payload.doc.data().anyoneStudyingNow}}</td>
-                    <td>{{form.payload.doc.data().dateSubmitted}}</td>
+                    <td>{{form.payload.doc.data().attendanceLength}}</td>
                     <td>{{form.payload.doc.data().yearsOfBeingABeliever}}</td>
-                    <td>{{form.payload.doc.data().countryCitizenship}}</td>
+                    <td class="widerCell">{{form.payload.doc.data().statementPurpose}}</td>
+                    <td>{{form.payload.doc.data().internetAccess}}</td>
+                    <td class="widerCell">{{form.payload.doc.data().refferencePoint}}</td>
+                    <td>{{form.payload.doc.data().anyoneStudyingNow}}</td>
                     <td>
                       <span *ngFor="let forms of form.payload.doc.data().ztsForms">
                         {{ forms }}
